@@ -1,0 +1,78 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "de227b06775c85a9568e8355adaeb53f",
+    "packages": [
+        {
+            "name": "fail-whale/fail-whale",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jesseschalken/fail-whale.git",
+                "reference": "60c76ea36b66268eb4f32f2a193253326586352e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jesseschalken/fail-whale/zipball/60c76ea36b66268eb4f32f2a193253326586352e",
+                "reference": "60c76ea36b66268eb4f32f2a193253326586352e",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jesse Schalken",
+                    "email": "me@jesseschalken.com"
+                }
+            ],
+            "description": "A robust error handler and pretty printer for PHP",
+            "time": "2015-04-28 02:04:27"
+        },
+        {
+            "name": "ivt/assert",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ivt/assert.git",
+                "reference": "c7a46ca627b41ed7859719ff478421ee096d4c42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivt/assert/zipball/c7a46ca627b41ed7859719ff478421ee096d4c42",
+                "reference": "c7a46ca627b41ed7859719ff478421ee096d4c42",
+                "shasum": ""
+            },
+            "require": {
+                "fail-whale/fail-whale": "^0.1.0"
+            },
+            "type": "library",
+            "support": {
+                "source": "https://github.com/ivt/assert/tree/0.1.0",
+                "issues": "https://github.com/ivt/assert/issues"
+            },
+            "time": "2015-09-01 03:10:17"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
