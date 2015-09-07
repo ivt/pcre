@@ -5,6 +5,11 @@ class PCRE
 {
 	static function quote( $text ) { return preg_quote( $text ); }
 
+	private static function array_get( $array, $key, $default = null )
+	{
+		return isset( $array[ $key ] ) ? $array[ $key ] : $default;
+	}
+
 	private static function check_preg_last_error()
 	{
 		$lastError = preg_last_error();
@@ -20,7 +25,7 @@ class PCRE
 				PREG_BAD_UTF8_OFFSET_ERROR => 'The offset didn\'t correspond to the beginning of a valid UTF-8 code point',
 			);
 
-			throw new PCREException( array_get( $errors, $lastError, 'Unknown Error' ), $lastError );
+			throw new PCREException( self::array_get( $errors, $lastError, 'Unknown Error' ), $lastError );
 		}
 	}
 
