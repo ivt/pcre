@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de227b06775c85a9568e8355adaeb53f",
+    "hash": "b0e455b759f21dc5b8fdd1ce58430cd8",
     "packages": [
         {
             "name": "fail-whale/fail-whale",
@@ -44,27 +44,28 @@
         },
         {
             "name": "ivt/assert",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ivt/assert.git",
-                "reference": "c7a46ca627b41ed7859719ff478421ee096d4c42"
+                "reference": "5fb5ffd0fa8f63cb39fbab504eb0b95388489f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivt/assert/zipball/c7a46ca627b41ed7859719ff478421ee096d4c42",
-                "reference": "c7a46ca627b41ed7859719ff478421ee096d4c42",
+                "url": "https://api.github.com/repos/ivt/assert/zipball/5fb5ffd0fa8f63cb39fbab504eb0b95388489f46",
+                "reference": "5fb5ffd0fa8f63cb39fbab504eb0b95388489f46",
                 "shasum": ""
             },
             "require": {
                 "fail-whale/fail-whale": "^0.1.0"
             },
             "type": "library",
+            "description": "Assertions for specific types, returning input value to reduce temporary variables",
             "support": {
-                "source": "https://github.com/ivt/assert/tree/0.1.0",
+                "source": "https://github.com/ivt/assert/tree/master",
                 "issues": "https://github.com/ivt/assert/issues"
             },
-            "time": "2015-09-01 03:10:17"
+            "time": "2015-09-02 02:08:03"
         }
     ],
     "packages-dev": [],

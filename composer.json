@@ -12,6 +12,9 @@
             "url": "https://github.com/ivt/assert.git"
         }
     ],
+    "autoload": {
+        "classmap": ["src/"]
+    },
     "require": {
         "ivt/assert": "^0.1.0"
     }
