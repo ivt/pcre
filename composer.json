@@ -16,6 +16,7 @@
         "classmap": ["src/"]
     },
     "require": {
+        "fail-whale/fail-whale": "^0.1.0",
         "ivt/assert": "^0.1.0"
     }
 }

@@ -155,7 +155,7 @@ class PCRE
 	}
 }
 
-class PCREException extends \IVT\Exception
+class PCREException extends \FailWhale\Exception
 {
 }
 
