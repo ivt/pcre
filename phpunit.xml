@@ -1,0 +1,7 @@
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="PCRE">
+            <file>src/Test.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
