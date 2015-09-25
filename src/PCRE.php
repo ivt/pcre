@@ -1,6 +1,6 @@
 <?php
 
-class PCRE {
+final class PCRE {
     /**
      * @param string $text
      * @return string
@@ -120,10 +120,10 @@ class PCRE {
     }
 }
 
-class PCREException extends \Exception {
+final class PCREException extends \Exception {
 }
 
-class PCREMatch {
+final class PCREMatch {
     private $subPatterns = array();
 
     function __construct(array $subPatterns) {
