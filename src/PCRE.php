@@ -9,7 +9,7 @@ final class PCRE {
         return preg_quote($text);
     }
 
-    private static function check_preg_last_error() {
+    private static function checkLastError() {
         $error = preg_last_error();
 
         if ($error !== PREG_NO_ERROR) {
@@ -39,7 +39,7 @@ final class PCRE {
         // Insert a "\" before each "#" preceded by an even number of "\"s
         $result = "#" . preg_replace("/(?<!\\\\)((\\\\\\\\)*)(#)/S", '$1\\\\$3', $regex) . "#$options";
 
-        self::check_preg_last_error();
+        self::checkLastError();
 
         return $result;
     }
@@ -55,7 +55,7 @@ final class PCRE {
         $regex      = self::compose($regex, $options);
         $numMatches = preg_match($regex, $subject, $match, PREG_OFFSET_CAPTURE);
 
-        self::check_preg_last_error();
+        self::checkLastError();
 
         return $numMatches ? new PCREMatch($match) : null;
     }
@@ -71,7 +71,7 @@ final class PCRE {
         $regex = self::compose($regex, $options);
         preg_match_all($regex, $subject, $matches, PREG_SET_ORDER | PREG_OFFSET_CAPTURE);
 
-        self::check_preg_last_error();
+        self::checkLastError();
 
         $result = array();
         foreach ($matches as $match)
@@ -93,7 +93,7 @@ final class PCRE {
         $regex  = self::compose($regex, $options);
         $result = preg_replace($regex, $replacement, $subject, $limit);
 
-        self::check_preg_last_error();
+        self::checkLastError();
 
         if (!is_string($result))
             throw new PCREException(gettype($result) . ' is not a string');
@@ -113,7 +113,7 @@ final class PCRE {
         $regex  = self::compose($regex, $options);
         $pieces = preg_split($regex, $subject, $limit);
 
-        self::check_preg_last_error();
+        self::checkLastError();
 
         if (!is_array($pieces))
             throw new PCREException(gettype($pieces) . ' is not an array');
