@@ -2,7 +2,10 @@
     "name": "ivt/pcre",
     "description": "PCRE class to wrap preg_* functions",
     "autoload": {
-        "classmap": ["src/"]
+        "classmap": ["src/"],
+        "files": [
+            "src/php_compat.php"
+        ]
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8.0"

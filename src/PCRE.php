@@ -16,10 +16,11 @@ final class PCRE {
             static $messages = array(
                 PREG_NO_ERROR              => 'No errors',
                 PREG_INTERNAL_ERROR        => 'Internal PCRE error',
-                PREG_BACKTRACK_LIMIT_ERROR => 'Backtrack limit was exhausted',
-                PREG_RECURSION_LIMIT_ERROR => 'Recursion limit was exhausted',
+                PREG_BACKTRACK_LIMIT_ERROR => 'Backtrack limit (pcre.backtrack_limit) was exhausted',
+                PREG_RECURSION_LIMIT_ERROR => 'Recursion limit (pcre.recursion_limit) was exhausted',
                 PREG_BAD_UTF8_ERROR        => 'Malformed UTF-8 data',
                 PREG_BAD_UTF8_OFFSET_ERROR => 'The offset didn\'t correspond to the beginning of a valid UTF-8 code point',
+                PREG_JIT_STACKLIMIT_ERROR  => 'JIT stack space limit exceeded',
             );
 
             $message = array_key_exists($error, $messages) ? $messages[$error] : 'Unknown error';
