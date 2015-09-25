@@ -17,5 +17,5 @@ These are resolved as follows:
 1. `preg_last_error()` is checked automatically and a `PCREException` is thrown in the case of an error.
 2. The regular expression is passed _without_ delimiters, and options that would normally occur after the last delimiter are passed seperately.
 3. `PCRE::match()` and `PCRE::matchAll()` return dedicated `PCREMatch` objects.
-4. Matches from `preg_match_all()` with offset `-1` are filtered out.
+4. Subgroups from `preg_match()` and `preg_match_all()` with offset `-1` are filtered out.
 5. The `$limit` is instead `int|null` with `null` meaning "no limit".
