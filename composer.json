@@ -1,6 +1,7 @@
 {
     "name": "ivt/pcre",
     "description": "PCRE class to wrap preg_* functions",
+    "license": "MIT",
     "autoload": {
         "classmap": ["src/"],
         "files": [
