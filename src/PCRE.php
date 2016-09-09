@@ -37,7 +37,7 @@ final class PCRE {
      */
     static function compose($regex, $options = '') {
         // Insert a "\" before each "#" preceded by an even number of "\"s
-        $result = "#" . preg_replace("/(?<!\\\\)((\\\\\\\\)*)(#)/S", '$1\\\\$3', $regex) . "#$options";
+        $result = "/" . preg_replace("/(?<!\\\\)((\\\\\\\\)*)(\\/)/S", '$1\\\\$3', $regex) . "/$options";
 
         self::checkLastError();
 
